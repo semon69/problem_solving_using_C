@@ -5,91 +5,16 @@ int main()
     long long a, b, c, d;
     scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
 
-    if (a + b + c == d)
+    if (a + b - c == d || a - b + c == d || a * b + c == d || a * b - c == d || a + b * c == d || a - b * c == d ||
+        a * (b + c) == d || a * (b - c) == d || (a + b) * c == d || (a - b) * c == d)
     {
-        printf("YES");
-    }
-    else if (a + b - c == d)
-    {
-        printf("YES");
-    }
-    else if (a - b + c == d)
-    {
-        printf("YES");
-    }
-    else if (a - b - c == d)
-    {
-        printf("YES");
-    }
-    else if (a * b + c == d)
-    {
-        printf("YES");
-    }
-    else if (a * b - c == d)
-    {
-        printf("YES");
-    }
-    else if (a + b * c == d)
-    {
-        printf("YES");
-    }
-    else if (a - b * c == d)
-    {
-        printf("YES");
-    }
-    else if (a * b * c == d)
-    {
-        printf("YES");
+
+        printf("YES\n");
     }
     else
     {
-        printf("NO");
+        printf("NO\n");
     }
 
     return 0;
 }
-
-// if (a + b + c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a + b) - c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a - b) + c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a - b) - c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a * b) + c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a * b) - c == d)
-// {
-//     printf("YES");
-// }
-// else if (a + (b * c) == d)
-// {
-//     printf("YES");
-// }
-// else if (a - (b * c) == d)
-// {
-//     printf("YES");
-// }
-// else if ((a + b) * c == d)
-// {
-//     printf("YES");
-// }
-// else if ((a - b) * c == d)
-// {
-//     printf("YES");
-// }
-// else if (a * b * c == d)
-// {
-//     printf("YES");
-// }
