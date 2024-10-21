@@ -2,9 +2,10 @@
 
 int main()
 {
-    char str[20];
+
     int n;
     scanf("%d", &n);
+    char str[n+1];
     scanf("%s", str);
     // fgets(str, sizeof(20), stdin);
 
@@ -16,8 +17,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         int digit = str[i] - '0';
-        num = num * 10 + digit;
-        printf("%d \n", num);
+        num = num  * 10 + digit;
     }
-    printf("Final result: %d", num);
+    printf("%d", num);
 }

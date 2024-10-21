@@ -11,7 +11,6 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-
     int isPalindrome = 1;
 
     for (int i = 0; i < n / 2; i++)
