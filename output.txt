@@ -1,3 +1,2 @@
-4 2
-abcdef
-ebcd af
+aaghi
+def
