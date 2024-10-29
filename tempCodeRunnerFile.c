@@ -1,2 +1,2 @@
 
-        scanf("%d", &a[i]);
+        // printf("%d\n", index);
