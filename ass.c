@@ -1,31 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
     int n;
     scanf("%d", &n);
-    int a[n];
+    int *arr = malloc(sizeof(int) * 1);
+    int currentSize = 1;
 
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
-    }
-    int max = a[0];
-
-    for (int j = 0; j < n; j++)
-    {
-        if (a[j] > max)
+        int number;
+        scanf("%d", &number);
+        if (i >= currentSize)
         {
-            max = a[j];
+            currentSize++;
+            arr = realloc(arr, sizeof(int) * currentSize);
         }
+
+        arr[i] = number;
     }
 
-    for (int j = 0; j < n; j++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%d ", max - a[j]);
+        printf("%d ", arr[i]);
     }
-
-
 
     return 0;
 }
